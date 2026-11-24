@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | LostLink</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Lost<span>Link.</span></a>
+        </div>
+
+        <nav class="navbarmenu1">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Items</a>
+            <a href="report.html">Report Item</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="my-reports.html">My Reports</a>
+        </nav>
+
+        <div class="nav-actions" id="authNav">
+            <a href="login.html" class="logout-btn logout-link">Logout</a>
+        </div>
+    </header>
+
+
+    <!-- Dashboard Main -->
+    <main class="dashboard-container">
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div>
+                <p class="welcome-label">STUDENT DASHBOARD</p>
+                <h1>Welcome back, <span id="welcomeStudentName">Student!</span></h1>
+                <p class="welcome-description">
+                    Manage your lost and found reports from one place.
+                </p>
+            </div>
+
+            <a href="report.html" class="primary-btn">
+                + Report an Item
+            </a>
+        </section>
+
+
+        <!-- Statistics Section -->
+        <section class="stats-section">
+
+            <div class="stat-card">
+                <div class="stat-icon purple-icon">📋</div>
+                <div>
+                    <p>Total Reports</p>
+                    <h2 id="totalReports">08</h2>
+                    <span>Items reported by you</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue-icon">🔍</div>
+                <div>
+                    <p>Lost Items</p>
+                    <h2 id="lostReports">05</h2>
+                    <span>Items you have lost</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green-icon">🎒</div>
+                <div>
+                    <p>Found Items</p>
+                    <h2 id="foundReports">03</h2>
+                    <span>Items you have found</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange-icon">✓</div>
+                <div>
+                    <p>Resolved Items</p>
+                    <h2 id="resolvedReports">02</h2>
+                    <span>Successfully returned</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>What would you like to do today?</p>
+                </div>
+            </div>
+
+            <div class="action-grid">
+
+                <a href="report.html" class="action-card">
+                    <div class="action-icon">📢</div>
+                    <div>
+                        <h3>Report Lost Item</h3>
+                        <p>Report something you have lost.</p>
+                    </div>
+                    <span class="action-arrow">→</span>
+                </a>
+
+                <a href="report.html" class="action-card">
+                    <div class="action-icon">🎒</div>
+                    <div>
+                        <h3>Report Found Item</h3>
+                        <p>Help someone find their belongings.</p>
+                    </div>
+                    <span class="action-arrow">→</span>
+                </a>
+
+                <a href="explore.html" class="action-card">
+                    <div class="action-icon">🔎</div>
+                    <div>
+                        <h3>Explore Items</h3>
+                        <p>Search for lost and found items.</p>
+                    </div>
+                    <span class="action-arrow">→</span>
+                </a>
+                <a href="my-reports.html" class="action-card">
+                    <div class="action-icon">📋</div>
+                    <div>
+                        <h3>My Reports</h3>
+                        <p>View and manage your submitted reports.</p>
+                    </div>
+                    <span class="action-arrow">→</span>
+                </a>
+
+                <a href="my-claims.html" class="action-card">
+                    <div class="action-icon">📨</div>
+                    <div>
+                        <h3>My Claim Requests</h3>
+                        <p>Track the status of items you have claimed.</p>
+                    </div>
+                    <span class="action-arrow">→</span>
+                </a>
+
+
+            </div>
+        </section>
+
+
+        <!-- Recent Reports -->
+        <section class="reports-section">
+
+            <div class="section-heading reports-heading">
+                <div>
+                    <h2>My Recent Reports</h2>
+                    <p>Check the status of your reported items.</p>
+                </div>
+
+                <a href="my-reports.html" class="view-all">View All Reports →</a>
+            </div>
+
+
+
+            <div class="table-wrapper">
+                <table class="reports-table">
+
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Category</th>
+                            <th>Report Type</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="dashboardRecentReports">
+
+                        <tr>
+                            <td colspan="5">Loading your reports...</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+        </section>
+
+        <!-- RECEIVED CLAIM REQUESTS -->
+        <section class="claims-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Received Claim Requests</h2>
+                    <p>Review requests from students claiming your found items.</p>
+                </div>
+            </div>
+
+            <!-- CLAIM REQUEST STATISTICS -->
+            <div class="claim-stats">
+                <div class="claim-stat-card">
+                    <span>⏳</span>
+                    <div>
+                        <h3 id="pendingClaimsCount">0</h3>
+                        <p>Pending Requests</p>
+                    </div>
+                </div>
+
+                <div class="claim-stat-card">
+                    <span>✓</span>
+                    <div>
+                        <h3 id="approvedClaimsCount">0</h3>
+                        <p>Approved Requests</p>
+                    </div>
+                </div>
+
+                <div class="claim-stat-card">
+                    <span>✕</span>
+                    <div>
+                        <h3 id="rejectedClaimsCount">0</h3>
+                        <p>Rejected Requests</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLAIM REQUEST CARDS -->
+            <div class="claim-requests-container" id="claimRequestsContainer">
+
+                <div class="claims-empty">
+                    <span>📭</span>
+                    <h3>No Claim Requests Yet</h3>
+                    <p>Requests for your found items will appear here.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+
+            <div class="profile-avatar" id="profileAvatar">S</div>
+
+            <div class="profile-info">
+                <p class="profile-label">YOUR PROFILE</p>
+                <h2 id="profileStudentName">Student Name</h2>
+                <p id="profileStudentEmail">student@example.com</p>
+            </div>
+
+            <a href="login.html" class="profile-btn logout-link">Logout</a>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="dashboard-footer">
+        <p>© 2026 LostLink. Helping belongings find their owners.</p>
+    </footer>
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Claim Requests | LostLink</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my-claims.css">
+    <link rel="stylesheet" href="css/notifications.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Lost<span>Link.</span></a>
+        </div>
+
+        <nav class="navbarmenu1">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Items</a>
+            <a href="report.html">Report Item</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="my-reports.html">My Reports</a>
+            <a href="my-claims.html" class="active">My Claims</a>
+        </nav>
+
+        <div class="nav-actions" id="authNav">
+            <a href="login.html" class="logout-btn logout-link">Logout</a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="my-claims-container">
+
+        <!-- PAGE HEADER -->
+        <section class="claims-page-header">
+
+            <p class="claims-tag">STUDENT DASHBOARD</p>
+
+            <h1>My Claim <span>Requests</span></h1>
+
+            <p>
+                Track the status of items you have claimed
+                and stay updated on your requests.
+            </p>
+
+        </section>
+
+
+        <!-- CLAIM STATISTICS -->
+        <section class="my-claims-stats">
+
+            <div class="my-claim-stat">
+                <span>📋</span>
+                <div>
+                    <h2 id="myTotalClaims">0</h2>
+                    <p>Total Requests</p>
+                </div>
+            </div>
+
+            <div class="my-claim-stat">
+                <span>⏳</span>
+                <div>
+                    <h2 id="myPendingClaims">0</h2>
+                    <p>Pending</p>
+                </div>
+            </div>
+
+            <div class="my-claim-stat">
+                <span>✓</span>
+                <div>
+                    <h2 id="myApprovedClaims">0</h2>
+                    <p>Approved</p>
+                </div>
+            </div>
+
+            <div class="my-claim-stat">
+                <span>✕</span>
+                <div>
+                    <h2 id="myRejectedClaims">0</h2>
+                    <p>Rejected</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- CLAIM REQUESTS -->
+        <section class="my-claims-section">
+
+            <div class="my-claims-heading">
+                <div>
+                    <h2>Your Submitted Requests</h2>
+                    <p>Check the latest updates on your claims.</p>
+                </div>
+            </div>
+
+
+            <div class="my-claims-grid" id="myClaimsGrid">
+
+                <div class="my-claims-empty">
+                    <span>📭</span>
+                    <h3>No Claim Requests Yet</h3>
+                    <p>Your submitted claim requests will appear here.</p>
+
+                    <a href="explore.html">
+                        Explore Found Items →
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK TO DASHBOARD -->
+        <div class="claims-back">
+            <a href="dashboard.html">← Back to Dashboard</a>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="dashboard-footer">
+        <p>© 2026 LostLink. Helping belongings find their owners.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/auth-guard.js"></script>
+    <script src="js/my-claims.js"></script>
+
+</body>
+
+</html>

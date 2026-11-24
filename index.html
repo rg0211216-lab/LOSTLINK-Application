@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LostLink | Campus Lost & Found Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- notification css -->
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <section class="indexHtml">
+
+        <!-- FULL NAVBAR -->
+        <div class="navbar">
+
+            <!-- NAVBAR LOGO -->
+            <div class="navbarlogo">
+                <span>📍</span>
+                <p>Lost<span>Link</span></p>
+            </div>
+
+            <!-- NAVBAR MENU -->
+            <div class="navbarmenu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+
+            <!-- LOGIN BUTTON -->
+            <!-- DYNAMIC LOGIN / LOGOUT BUTTON -->
+            <div class="loginbtm" id="authNav">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- MOBILE NAVBAR MENU -->
+        <div class="navbarmenu1">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+
+        <div class="line1"></div>
+
+
+        <!-- HERO SECTION -->
+        <section class="hero_section" id="Home">
+
+            <div class="hero_content">
+
+                <span class="hero_tag">
+                    CAMPUS LOST & FOUND PORTAL
+                </span>
+
+                <h1>
+                    Lost Something?
+                    <span>Find It Here.</span>
+                </h1>
+
+                <h2>
+                    A smarter way to find what's lost on campus.
+                </h2>
+
+                <p>
+                    Report lost belongings, search found items,
+                    and help your campus community reconnect
+                    with the things that matter.
+                </p>
+
+                <div class="hero_buttons">
+
+                    <a href="explore.html" class="primary_btn">
+                        Explore Items <span>→</span>
+                    </a>
+
+                    <a href="report.html" class="secondary_btn">
+                        + Report Item
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO ILLUSTRATION -->
+            <div class="hero_image">
+
+                <div class="illustration_box">
+
+                    <div class="bag_handle"></div>
+
+                    <div class="bag">
+                        <div class="bag_pocket"></div>
+                    </div>
+
+                    <div class="magnifying_glass">
+                        <div class="glass_circle"></div>
+                        <div class="glass_handle"></div>
+                    </div>
+
+                    <div class="blue_dot"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS SECTION -->
+        <section class="statistics" id="Dashboard">
+
+            <div class="stat_card">
+
+                <span class="stat_icon">◇</span>
+
+                <h2>500+</h2>
+
+                <p>Total Items Listed</p>
+
+            </div>
+
+
+            <div class="stat_card">
+
+                <span class="stat_icon">♙</span>
+
+                <h2>800+</h2>
+
+                <p>Students Helped</p>
+
+            </div>
+
+
+            <div class="stat_card">
+
+                <span class="stat_icon">✓</span>
+
+                <h2>98%</h2>
+
+                <p>Successful Returns</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT LOST AND FOUND SECTION -->
+        <section class="recent_section" id="Explore">
+
+            <div class="section_heading">
+
+                <h2>Recent Lost & Found</h2>
+
+                <p>
+                    Explore recently reported lost and found items
+                    from your campus.
+                </p>
+
+            </div>
+
+
+
+            <div class="items_container" id="recentItemsContainer">
+
+                <p class="recent-loading">
+                    Loading recent items...
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- HOW IT WORKS SECTION -->
+        <section class="how_section" id="About">
+
+            <div class="section_heading">
+
+                <h2>How LostLink Works</h2>
+
+                <p>
+                    Finding your lost belongings is now easier
+                    than ever.
+                </p>
+
+            </div>
+
+
+            <div class="steps_container">
+
+                <div class="step_card">
+
+                    <div class="step_icon">📝</div>
+
+                    <h3>Report an Item</h3>
+
+                    <p>
+                        Report your lost or found item with
+                        basic details and location.
+                    </p>
+
+                </div>
+
+
+                <div class="step_card">
+
+                    <div class="step_icon">🔍</div>
+
+                    <h3>Search & Discover</h3>
+
+                    <p>
+                        Explore reported items and find
+                        belongings that match yours.
+                    </p>
+
+                </div>
+
+
+                <div class="step_card">
+
+                    <div class="step_icon">🤝</div>
+
+                    <h3>Reconnect</h3>
+
+                    <p>
+                        Connect with the right person
+                        and get your belongings back.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION SECTION -->
+        <section class="cta_section" id="Report">
+
+            <div class="cta_content">
+
+                <h2>Found Something?</h2>
+
+                <h3>Help Someone Today.</h3>
+
+                <p>
+                    Your small effort can make someone's day better.
+                    Report a found item and help it reach its owner.
+                </p>
+
+                <a href="report.html" class="primary_btn">
+                    Report an Item →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+
+                    <h2>📍 Lost<span>Link</span></h2>
+
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="#About">About Us</a>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer_bottom">
+
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+
+            </div>
+
+        </footer>
+
+    </section>
+
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/recent-items.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

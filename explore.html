@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Items | LostLink</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Explore Page CSS -->
+    <link rel="stylesheet" href="css/explore.css">
+
+    <!-- notification css -->
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <section class="indexHtml">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+
+            <div class="navbarlogo">
+                <span>📍</span>
+                <p>Lost<span>Link</span></p>
+            </div>
+
+            <div class="navbarmenu">
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                </ul>
+            </div>
+
+            <div class="loginbtm" id="authNav">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- MOBILE NAVBAR -->
+        <div class="navbarmenu1">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html#About">About</a></li>
+            </ul>
+        </div>
+
+        <div class="line1"></div>
+
+
+        <!-- EXPLORE HEADER -->
+        <section class="explore_header">
+
+            <span class="explore_tag">CAMPUS LOST & FOUND</span>
+
+            <h1>
+                Explore <span>Items</span>
+            </h1>
+
+            <p>
+                Search for lost belongings or discover
+                items found by other students on campus.
+            </p>
+
+        </section>
+
+
+        <!-- SEARCH SECTION -->
+        <section class="search_section">
+
+            <div class="search_box">
+
+                <span>🔍</span>
+
+                <input type="search" id="searchInput" placeholder="Search items by name..." aria-label="Search items">
+
+            </div>
+
+        </section>
+
+
+        <!-- FILTER SECTION -->
+        <section class="filter_section">
+
+            <div class="filter_heading">
+                <h3>Browse Items</h3>
+                <p>Find what you are looking for.</p>
+            </div>
+
+            <div class="filter_buttons">
+
+                <button class="filter_btn active" data-filter="all">
+                    All Items
+                </button>
+
+                <button class="filter_btn" data-filter="lost">
+                    Lost Items
+                </button>
+
+                <button class="filter_btn" data-filter="found">
+                    Found Items
+                </button>
+
+            </div>
+
+            <div class="category_buttons">
+
+                <button class="category_btn active" data-category="all">
+                    All Categories
+                </button>
+
+                <button class="category_btn" data-category="Electronics">
+                    Electronics
+                </button>
+
+                <button class="category_btn" data-category="Bags">
+                    Bags
+                </button>
+
+                <button class="category_btn" data-category="Accessories">
+                    Accessories
+                </button>
+
+                <button class="category_btn" data-category="Documents">
+                    Documents
+                </button>
+
+                <button class="category_btn" data-category="Books">
+                    Books
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ITEMS SECTION -->
+        <section class="explore_items">
+
+            <div class="items_top">
+
+                <div>
+                    <h2>Recently Reported Items</h2>
+                    <p>Explore the latest campus reports.</p>
+                </div>
+
+                <span class="item_count" id="itemCount">0 Items</span>
+
+            </div>
+
+
+            <div class="explore_grid" id="exploreGrid">
+
+                <p class="explore_loading">
+                    Loading items...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+
+                    <h2>📍 Lost<span>Link</span></h2>
+
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+
+                </div>
+
+                <div class="footer_links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="index.html#About">About Us</a>
+
+                </div>
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_bottom">
+
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+
+            </div>
+
+        </footer>
+
+    </section>
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/explore.js"></script>
+</body>
+
+</html>

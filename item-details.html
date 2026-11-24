@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Item Details | LostLink</title>
+
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ITEM DETAILS CSS -->
+    <link rel="stylesheet" href="css/item-details.css">
+
+    <!-- css notification -->
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <section class="indexHtml">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+
+            <div class="navbarlogo">
+                <span>📍</span>
+                <p>Lost<span>Link</span></p>
+            </div>
+
+            <div class="navbarmenu">
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                </ul>
+            </div>
+
+            <div class="loginbtm" id="authNav">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- MOBILE NAVBAR -->
+        <div class="navbarmenu1">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html#About">About</a></li>
+            </ul>
+        </div>
+
+        <div class="line1"></div>
+
+
+        <!-- PAGE BREADCRUMB -->
+        <div class="details_breadcrumb">
+            <a href="index.html">Home</a>
+            <span> / </span>
+            <a href="explore.html">Explore Items</a>
+            <span> / Item Details</span>
+        </div>
+
+
+        <!-- PAGE HEADING -->
+        <section class="details_header">
+
+            <span class="details_tag">ITEM INFORMATION</span>
+
+            <h1>Item <span>Details</span></h1>
+
+            <p>
+                View complete information about this reported item
+                and connect with the person who reported it.
+            </p>
+
+        </section>
+
+
+        <!-- ITEM DETAILS MAIN SECTION -->
+        <section class="details_container">
+
+            <!-- LEFT SIDE: ITEM IMAGE -->
+            <div class="details_image_section">
+
+                <div class="details_main_image" id="detailsMainImage">
+
+                    <span class="details_status lost_status" id="detailsStatus">
+                        LOST ITEM
+                    </span>
+
+                    <div class="details_emoji" id="detailsEmoji">
+                        📦
+                    </div>
+
+                    <span class="image_caption" id="imageCaption">
+                        Item Image
+                    </span>
+
+                </div>
+
+                <div class="image_note">
+                    <span>📷</span>
+                    <p>
+                        Item photograph will appear here.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE: ITEM INFORMATION -->
+            <div class="details_info">
+
+                <div class="details_category" id="detailsCategory">
+                    ACCESSORIES
+                </div>
+
+                <h2 id="detailsItemName">Black Wallet</h2>
+                <p class="details_description" id="detailsDescription">
+                    A black leather wallet was reported missing near the library area.
+                </p>
+
+
+                <!-- ITEM INFORMATION -->
+                <div class="information_list">
+
+                    <div class="information_item">
+                        <span>📍</span>
+
+                        <div>
+                            <small>Location</small>
+                            <p id="detailsLocation">Library Area</p>
+                        </div>
+                    </div>
+
+
+                    <div class="information_item">
+                        <span>📅</span>
+
+                        <div>
+                            <small>Lost / Found Date</small>
+                            <p id="detailsDate">18 November 2026</p>
+                        </div>
+                    </div>
+
+
+                    <div class="information_item">
+                        <span>📂</span>
+
+                        <div>
+                            <small>Category</small>
+                            <p id="detailsCategoryInfo">Accessories</p>
+                        </div>
+                    </div>
+
+
+                    <div class="information_item">
+                        <span>🔖</span>
+
+                        <div>
+                            <small>Report ID</small>
+                            <p id="detailsReportId">LL-001</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT INFORMATION -->
+                <div class="contact_card">
+
+                    <h3>Reported By</h3>
+
+                    <div class="contact_user">
+
+                        <div class="user_avatar" id="detailsAvatar">
+                            RK
+                        </div>
+
+                        <div class="user_information">
+                            <h4 id="detailsStudentName">Rahul Kumar</h4>
+                            <p>Student</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact_details">
+
+                        <p id="detailsEmail">rahul@example.com</p>
+
+                        <p id="detailsPhone">+91 98765 43210</p>
+
+                    </div>
+
+                    <a href="mailto:rahul@example.com" class="contact_button" id="contactButton">
+                        Contact Student →
+                    </a>
+
+                </div>
+
+                <!-- CLAIM ITEM SECTION -->
+                <div class="claim-section" id="claimSection" style="display: none;">
+
+                    <h3>Is This Your Belonging?</h3>
+
+                    <p>
+                        If you believe this item belongs to you,
+                        submit a claim request with identification details.
+                    </p>
+
+                    <button type="button" class="claim-button" id="claimItemButton">
+                        Claim This Item →
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- CLAIM REQUEST MODAL -->
+        <div class="claim-modal-overlay" id="claimModal">
+
+            <div class="claim-modal">
+
+                <button type="button" class="claim-modal-close" id="closeClaimModal">
+                    &times;
+                </button>
+
+                <div class="claim-modal-header">
+
+                    <span>LOSTLINK CLAIM SYSTEM</span>
+
+                    <h2>Claim <span>This Item</span></h2>
+
+                    <p>
+                        Provide some details to help the reporter verify
+                        that this item belongs to you.
+                    </p>
+
+                </div>
+
+                <form id="claimForm">
+
+                    <div class="claim-form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="claimStudentName" readonly>
+                    </div>
+
+                    <div class="claim-form-group">
+                        <label>Your Email</label>
+                        <input type="email" id="claimStudentEmail" readonly>
+                    </div>
+
+                    <div class="claim-form-group">
+                        <label>Contact Number</label>
+                        <input type="tel" id="claimStudentPhone" placeholder="Enter your 10-digit phone number"
+                            pattern="[0-9]{10}" maxlength="10" required>
+                    </div>
+
+                    <div class="claim-form-group">
+                        <label>Why do you think this item belongs to you?</label>
+
+                        <textarea id="claimExplanation"
+                            placeholder="Describe some unique details that can prove your ownership..." minlength="20"
+                            required></textarea>
+                    </div>
+
+                    <div class="claim-form-actions">
+
+                        <button type="button" id="cancelClaim">
+                            Cancel
+                        </button>
+
+                        <button type="submit" id="submitClaim">
+                            Submit Claim Request →
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BACK TO EXPLORE -->
+        <div class="back_explore">
+
+            <a href="explore.html">
+                ← Back to Explore Items
+            </a>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+
+                    <h2>📍 Lost<span>Link</span></h2>
+
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="index.html#About">About Us</a>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer_bottom">
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+            </div>
+
+        </footer>
+
+    </section>
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/item-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+
+/* =========================
+   MY CLAIMS GENERAL
+========================= */
+
+body {
+    background: linear-gradient(
+        180deg,
+        #171244 0%,
+        #121039 55%,
+        #080C25 100%
+    );
+
+    color: #F8F9FF;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.my-claims-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 50px auto;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #9B55FF;
+}
+
+.navbarmenu1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbarmenu1 a {
+    color: #B5BFDC;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbarmenu1 a:hover,
+.navbarmenu1 a.active {
+    color: #9B55FF;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.claims-page-header {
+    text-align: center;
+    padding: 45px 0;
+}
+
+.claims-tag {
+    display: inline-block;
+    background: #302269;
+    color: #C9B7FF;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 11px;
+    margin-bottom: 18px;
+}
+
+.claims-page-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.claims-page-header h1 span {
+    color: #A77BFF;
+}
+
+.claims-page-header > p:last-child {
+    color: #B5BFDC;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CLAIM STATISTICS
+========================= */
+
+.my-claims-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.my-claim-stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #141D40;
+    border: 1px solid #343568;
+    border-radius: 14px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.my-claim-stat:hover {
+    transform: translateY(-4px);
+    border-color: #9B55FF;
+}
+
+.my-claim-stat > span {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(155,85,255,0.15);
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.my-claim-stat h2 {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.my-claim-stat p {
+    color: #B5BFDC;
+    font-size: 11px;
+}
+
+
+/* =========================
+   CLAIMS HEADING
+========================= */
+
+.my-claims-section {
+    margin-bottom: 40px;
+}
+
+.my-claims-heading {
+    margin-bottom: 22px;
+}
+
+.my-claims-heading h2 {
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+.my-claims-heading p {
+    color: #B5BFDC;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CLAIMS GRID
+========================= */
+
+.my-claims-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.my-claims-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px 20px;
+    background: #141D40;
+    border: 1px dashed #49418B;
+    border-radius: 16px;
+}
+
+.my-claims-empty > span {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.my-claims-empty h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.my-claims-empty p {
+    color: #B5BFDC;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.my-claims-empty a {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(100deg, #713CFF, #9B55FF);
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   BACK TO DASHBOARD
+========================= */
+
+.claims-back {
+    text-align: center;
+    margin: 45px 0 80px;
+}
+
+.claims-back a {
+    color: #A77BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.claims-back a:hover {
+    color: #16A9FF;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.dashboard-footer {
+    text-align: center;
+    padding: 22px 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.dashboard-footer p {
+    color: #8792B5;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .my-claims-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .my-claims-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 18px 4%;
+    }
+
+    .navbarmenu1 {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 12px 18px;
+        padding: 10px 0;
+    }
+
+    .navbarmenu1 a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .my-claims-container {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    .claims-page-header h1 {
+        font-size: 32px;
+    }
+
+    .claims-page-header > p:last-child {
+        font-size: 12px;
+    }
+
+    .my-claims-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .my-claim-stat {
+        padding: 17px;
+    }
+
+}
+
+/* =========================
+   NAVBAR LOGIN / LOGOUT BUTTON
+========================= */
+
+.logout-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+    background: linear-gradient(100deg, #713CFF, #9B55FF);
+
+    padding: 10px 22px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    transform: translateY(-3px);
+}

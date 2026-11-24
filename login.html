@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | LostLink</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <section class="indexHtml">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+
+            <div class="navbarlogo">
+                <span>📍</span>
+                <p>Lost<span>Link</span></p>
+            </div>
+
+            <div class="navbarmenu">
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                </ul>
+            </div>
+
+            <div class="loginbtm" id="authNav">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- MOBILE NAVBAR -->
+        <div class="navbarmenu1">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html#About">About</a></li>
+            </ul>
+        </div>
+
+        <div class="line1"></div>
+
+
+        <!-- LOGIN SECTION -->
+        <section class="auth_section">
+
+            <div class="auth_card">
+
+                <div class="auth_logo">📍 Lost<span>Link</span></div>
+
+                <span class="auth_tag">WELCOME BACK</span>
+
+                <h1>Login to Your Account</h1>
+
+                <p class="auth_subtitle">
+                    Sign in to continue your campus lost and found journey.
+                </p>
+
+                <form class="auth_form" id="loginForm">
+
+                    <div class="auth_group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter your email"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="auth_group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+                    </div>
+
+                    <div class="auth_options">
+
+                        <label class="remember_option">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#forgot-password">Forgot Password?</a>
+
+                    </div>
+
+                    <button type="submit" class="auth_submit">
+                        Login →
+                    </button>
+
+                </form>
+
+                <div class="auth_switch">
+                    Don't have an account?
+                    <a href="register.html">Create Account</a>
+                </div>
+
+                <a href="index.html" class="back_home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+                    <h2>📍 Lost<span>Link</span></h2>
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+                </div>
+
+                <div class="footer_links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="index.html#About">About Us</a>
+                </div>
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_bottom">
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+            </div>
+
+        </footer>
+
+    </section>
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

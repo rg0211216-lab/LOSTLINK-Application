@@ -1,0 +1,165 @@
+
+/* =================================
+   LOSTLINK NOTIFICATION MODAL
+================================= */
+
+.notification-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 5, 20, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.notification-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notification-modal {
+    width: 100%;
+    max-width: 400px;
+
+    background: #141D40;
+    border: 1px solid #343568;
+    border-radius: 20px;
+
+    padding: 30px 25px;
+    text-align: center;
+
+    position: relative;
+
+    transform: translateY(20px);
+    transition: 0.3s ease;
+}
+
+.notification-overlay.show .notification-modal {
+    transform: translateY(0);
+}
+
+.notification-close {
+    position: absolute;
+    top: 14px;
+    right: 17px;
+
+    background: none;
+    border: none;
+
+    color: #B5BFDC;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(155, 85, 255, 0.15);
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+.notification-modal h2 {
+    color: #F8F9FF;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.notification-modal p {
+    color: #B5BFDC;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.notification-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.notification-primary {
+    display: block;
+    width: 100%;
+
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(100deg, #713CFF, #9B55FF);
+
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.notification-primary:hover {
+    transform: translateY(-2px);
+}
+
+.notification-secondary {
+    background: transparent;
+    border: none;
+
+    color: #B5BFDC;
+    font-family: inherit;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.notification-secondary:hover {
+    color: white;
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 480px) {
+
+    .notification-overlay {
+        padding: 18px;
+    }
+
+    .notification-modal {
+        max-width: 100%;
+        padding: 28px 20px;
+        border-radius: 17px;
+    }
+
+    .notification-modal h2 {
+        font-size: 20px;
+    }
+
+    .notification-modal p {
+        font-size: 12px;
+    }
+
+    .notification-primary {
+        padding: 14px;
+    }
+
+}

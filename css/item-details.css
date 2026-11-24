@@ -1,0 +1,711 @@
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+.details_breadcrumb {
+    margin-top: 30px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.details_breadcrumb a {
+    color: #A77BFF;
+    transition: color 0.2s ease;
+}
+
+.details_breadcrumb a:hover {
+    color: var(--blue);
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.details_header {
+    text-align: center;
+    padding: 50px 0 40px;
+}
+
+.details_tag {
+    display: inline-block;
+
+    background: #302269;
+    color: #C9B7FF;
+
+    padding: 9px 20px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.details_header h1 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.details_header h1 span {
+    color: #A77BFF;
+}
+
+.details_header p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* =========================
+   MAIN DETAILS CONTAINER
+========================= */
+
+.details_container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 35px;
+    align-items: start;
+
+    background: rgba(20, 29, 64, 0.75);
+
+    border: 1px solid var(--border);
+    border-radius: 25px;
+
+    padding: 30px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.details_image_section {
+    width: 100%;
+}
+
+.details_main_image {
+    position: relative;
+
+    width: 100%;
+    min-height: 380px;
+
+    background: linear-gradient(
+        135deg,
+        #25205C,
+        #151D42
+    );
+
+    border: 1px solid #49418B;
+    border-radius: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.details_emoji {
+    font-size: 120px;
+}
+
+.details_status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.lost_status {
+    background: #4B263B;
+    color: #FF8EAB;
+}
+
+.found_status {
+    background: #153F3B;
+    color: #22D3A6;
+}
+
+.image_caption {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.image_note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 15px;
+
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+/* =========================
+   ITEM INFORMATION
+========================= */
+
+.details_info {
+    width: 100%;
+}
+
+.details_category {
+    display: inline-block;
+
+    color: #BCA5FF;
+    background: #302269;
+
+    padding: 7px 13px;
+    border-radius: 20px;
+
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.details_info > h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.details_description {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   INFORMATION LIST
+========================= */
+
+.information_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.information_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #0D1533;
+
+    border: 1px solid #343568;
+    border-radius: 13px;
+
+    padding: 15px;
+}
+
+.information_item > span {
+    font-size: 22px;
+}
+
+.information_item small {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.information_item p {
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   CONTACT CARD
+========================= */
+
+.contact_card {
+    background: #0D1533;
+
+    border: 1px solid #343568;
+    border-radius: 18px;
+
+    padding: 22px;
+}
+
+.contact_card > h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact_user {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin-bottom: 20px;
+}
+
+.user_avatar {
+    width: 48px;
+    height: 48px;
+
+    background: var(--gradient);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user_information h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.user_information p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.contact_details {
+    border-top: 1px solid #343568;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact_details p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.contact_button {
+    display: block;
+
+    background: var(--gradient);
+    color: white;
+
+    text-align: center;
+
+    padding: 14px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: transform 0.2s ease;
+}
+
+.contact_button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   BACK TO EXPLORE
+========================= */
+
+.back_explore {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.back_explore a {
+    color: #A77BFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.back_explore a:hover {
+    color: var(--blue);
+}
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media screen and (max-width: 1200px) {
+
+    .details_container {
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .details_main_image {
+        min-height: 330px;
+    }
+
+    .details_info > h2 {
+        font-size: 27px;
+    }
+
+    .information_list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media screen and (max-width: 720px) {
+
+    .details_breadcrumb {
+        margin-top: 25px;
+        font-size: 11px;
+    }
+
+    .details_header {
+        padding: 40px 0 30px;
+    }
+
+    .details_header h1 {
+        font-size: 36px;
+    }
+
+    .details_header p {
+        font-size: 13px;
+    }
+
+    .details_container {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+        padding: 18px;
+
+        border-radius: 20px;
+    }
+
+    .details_main_image {
+        min-height: 260px;
+    }
+
+    .details_emoji {
+        font-size: 95px;
+    }
+
+    .details_info > h2 {
+        font-size: 26px;
+    }
+
+    .details_description {
+        font-size: 13px;
+    }
+
+    .information_list {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .information_item {
+        padding: 12px 9px;
+        gap: 8px;
+    }
+
+    .information_item > span {
+        font-size: 18px;
+    }
+
+    .information_item p {
+        font-size: 11px;
+    }
+
+    .contact_card {
+        padding: 18px;
+    }
+
+    .back_explore {
+        margin-bottom: 75px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 450px) {
+
+    .details_header h1 {
+        font-size: 32px;
+    }
+
+    .details_container {
+        padding: 14px;
+    }
+
+    .details_main_image {
+        min-height: 230px;
+    }
+
+    .details_emoji {
+        font-size: 85px;
+    }
+
+    .details_info > h2 {
+        font-size: 23px;
+    }
+
+    .information_list {
+        grid-template-columns: 1fr;
+    }
+
+    .information_item {
+        padding: 13px;
+    }
+
+}
+
+/* =========================
+   CLAIM ITEM SECTION
+========================= */
+
+.claim-section {
+    background: linear-gradient(135deg, #211B52, #141D40);
+    border: 1px solid #49418B;
+    border-radius: 18px;
+    padding: 22px;
+    margin-top: 25px;
+}
+
+.claim-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.claim-section p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.claim-button {
+    background: var(--gradient);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.claim-button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CLAIM REQUEST MODAL
+========================= */
+
+.claim-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background: rgba(3, 6, 20, 0.85);
+    backdrop-filter: blur(8px);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.claim-modal-overlay.active {
+    display: flex;
+}
+
+.claim-modal {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+
+    background: #141D40;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+
+    padding: 30px;
+    margin: auto;
+}
+
+.claim-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    background: transparent;
+    border: none;
+    color: var(--muted);
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.claim-modal-header {
+    margin-bottom: 25px;
+}
+
+.claim-modal-header > span {
+    color: #A77BFF;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.claim-modal-header h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.claim-modal-header h2 span {
+    color: #A77BFF;
+}
+
+.claim-modal-header p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* CLAIM FORM */
+
+.claim-form-group {
+    margin-bottom: 18px;
+}
+
+.claim-form-group label {
+    display: block;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.claim-form-group input,
+.claim-form-group textarea {
+    width: 100%;
+    background: #0D1533;
+
+    border: 1px solid #343568;
+    border-radius: 10px;
+
+    padding: 13px;
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.claim-form-group input:focus,
+.claim-form-group textarea:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 2px rgba(155, 85, 255, 0.12);
+}
+
+.claim-form-group input[readonly] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.claim-form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.claim-form-group input::placeholder,
+.claim-form-group textarea::placeholder {
+    color: #7883A5;
+}
+
+
+/* FORM BUTTONS */
+
+.claim-form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.claim-form-actions button {
+    flex: 1;
+    padding: 13px 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#cancelClaim {
+    background: #252D50;
+    color: var(--text);
+}
+
+#submitClaim {
+    background: var(--gradient);
+    color: white;
+}
+
+.claim-form-actions button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   CLAIM MODAL RESPONSIVENESS
+========================= */
+
+@media screen and (max-width: 500px) {
+
+    .claim-modal {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .claim-modal-header h2 {
+        font-size: 24px;
+    }
+
+    .claim-form-actions {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Item | LostLink</title>
+
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- REPORT PAGE CSS -->
+    <link rel="stylesheet" href="css/report.css">
+
+    <!-- NOTIFICATIONS PAGE CSS -->
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <section class="indexHtml">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+
+            <div class="navbarlogo">
+                <span>📍</span>
+                <p>Lost<span>Link</span></p>
+            </div>
+
+            <div class="navbarmenu">
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                </ul>
+            </div>
+
+            <div class="loginbtm" id="authNav">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- MOBILE NAVBAR -->
+        <div class="navbarmenu1">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html#About">About</a></li>
+            </ul>
+        </div>
+
+        <div class="line1"></div>
+
+        <!-- REPORT PAGE HEADER -->
+        <section class="report_header">
+
+            <span class="report_tag">HELP YOUR CAMPUS COMMUNITY</span>
+
+            <h1>
+                Report an <span>Item</span>
+            </h1>
+
+            <p>
+                Lost something or found an item on campus?
+                Share its details below and help reconnect
+                belongings with their owners.
+            </p>
+
+        </section>
+
+        <!-- REPORT FORM SECTION -->
+        <section class="report_section">
+
+            <div class="report_form_header">
+
+                <h2>Item Information</h2>
+
+                <p>
+                    Fill in the details carefully to create
+                    an accurate report.
+                </p>
+
+            </div>
+
+            <form class="report_form" id="reportForm">
+
+                <!-- ITEM TYPE -->
+                <div class="form_group">
+
+                    <label>What do you want to report? <span>*</span></label>
+
+                    <div class="type_options">
+
+                        <label class="type_option">
+                            <input type="radio" name="itemType" value="lost" checked>
+                            <span>🔴 Lost Item</span>
+                        </label>
+
+                        <label class="type_option">
+                            <input type="radio" name="itemType" value="found">
+                            <span>🟢 Found Item</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM NAME -->
+                <div class="form_group">
+
+                    <label for="itemName">
+                        Item Name <span>*</span>
+                    </label>
+
+                    <input type="text" id="itemName" name="itemName" placeholder="Example: Black Wallet" required>
+
+                </div>
+
+                <!-- CATEGORY -->
+                <div class="form_group">
+
+                    <label for="category">
+                        Item Category <span>*</span>
+                    </label>
+
+                    <select id="category" name="category" required>
+
+                        <option value="">Select a category</option>
+                        <option>Electronics</option>
+                        <option>Bags</option>
+                        <option>Accessories</option>
+                        <option>Documents</option>
+                        <option>Books</option>
+                        <option>Clothing</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+                <!-- DESCRIPTION -->
+                <div class="form_group">
+
+                    <label for="description">
+                        Item Description <span>*</span>
+                    </label>
+
+                    <textarea id="description" name="description" rows="5"
+                        placeholder="Describe the item, its colour, brand, special marks, etc." required></textarea>
+
+                </div>
+
+                <!-- LOCATION AND DATE -->
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="location">
+                            Location <span>*</span>
+                        </label>
+
+                        <input type="text" id="location" name="location" placeholder="Example: Library" required>
+
+                    </div>
+
+                    <div class="form_group">
+
+                        <label for="itemDate">
+                            Lost / Found Date <span>*</span>
+                        </label>
+
+                        <input type="date" id="itemDate" name="itemDate" max="" required>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE UPLOAD -->
+
+                <!-- IMAGE UPLOAD -->
+                <div class="form_group">
+
+                    <label for="itemImage">
+                        Upload Item Image
+                    </label>
+
+                    <div class="upload_box">
+
+                        <input type="file" id="itemImage" name="itemImage" accept="image/png, image/jpeg, image/jpg">
+
+                        <span class="upload_icon">📷</span>
+
+                        <p>Choose an image of your item</p>
+
+                        <small>PNG, JPG or JPEG</small>
+
+                        <!-- IMAGE PREVIEW -->
+                        <div class="image_preview" id="imagePreviewContainer">
+
+                            <img src="" alt="Selected item preview" id="previewImage">
+
+                            <p id="imageName"></p>
+
+                            <button type="button" id="removeImage">
+                                Remove Image ✕
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT DETAILS -->
+                <div class="form_divider"></div>
+
+                <div class="report_form_header contact_heading">
+
+                    <h2>Contact Information</h2>
+
+                    <p>
+                        Provide your contact details so other
+                        students can reach you.
+                    </p>
+
+                </div>
+
+                <div class="form_group">
+
+                    <label for="studentName">
+                        Your Name <span>*</span>
+                    </label>
+
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+
+                </div>
+
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="email">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                    </div>
+
+                    <div class="form_group">
+
+                        <label for="phone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number"
+                            pattern="[0-9]{10}" maxlength="10" required>
+
+                    </div>
+
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <div class="form_submit">
+
+                    <button type="submit">
+                        Submit Report →
+                    </button>
+
+                    <p>
+                        Please check your information before submitting.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+
+                    <h2>📍 Lost<span>Link</span></h2>
+
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+
+                </div>
+
+                <div class="footer_links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="index.html#About">About Us</a>
+
+                </div>
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer_bottom">
+
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+
+            </div>
+
+        </footer>
+
+    </section>
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/auth-guard.js"></script>
+    <script src="js/report.js"></script>
+</body>
+
+</html>

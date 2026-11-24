@@ -1,0 +1,49 @@
+
+/* REGISTER PAGE */
+
+.terms_option {
+    margin: 5px 0 25px;
+}
+
+.terms_option label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+
+    cursor: pointer;
+}
+
+.terms_option input {
+    margin-top: 4px;
+    accent-color: var(--purple);
+}
+
+.terms_option span {
+    flex: 1;
+}
+
+
+/* REGISTER CARD */
+
+.auth_card {
+    max-width: 520px;
+}
+
+
+/* REGISTER MOBILE */
+
+@media screen and (max-width: 720px) {
+
+    .auth_card {
+        max-width: 100%;
+    }
+
+    .terms_option label {
+        font-size: 11px;
+    }
+
+}

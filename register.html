@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | LostLink</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/notifications.css">
+</head>
+
+<body>
+
+    <section class="indexHtml">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+
+            <div class="navbarlogo">
+                <span>📍</span>
+                <p>Lost<span>Link</span></p>
+            </div>
+
+            <div class="navbarmenu">
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html#About">About</a></li>
+                </ul>
+            </div>
+
+            <div class="loginbtm" id="authNav">
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <!-- MOBILE NAVBAR -->
+        <div class="navbarmenu1">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html#About">About</a></li>
+            </ul>
+        </div>
+
+        <div class="line1"></div>
+
+
+        <!-- REGISTER SECTION -->
+        <section class="auth_section">
+
+            <div class="auth_card">
+
+                <div class="auth_logo">📍 Lost<span>Link</span></div>
+
+                <span class="auth_tag">JOIN LOSTLINK</span>
+
+                <h1>Create Your Account</h1>
+
+                <p class="auth_subtitle">
+                    Register as a student and become part of
+                    your campus lost and found community.
+                </p>
+
+
+                <form class="auth_form" id="registerForm">
+
+                    <!-- FULL NAME -->
+                    <div class="auth_group">
+
+                        <label for="fullName">Full Name</label>
+
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                            autocomplete="name" required>
+
+                    </div>
+
+
+                    <!-- STUDENT EMAIL -->
+                    <div class="auth_group">
+
+                        <label for="studentEmail">Student Email</label>
+
+                        <input type="email" id="studentEmail" name="email" placeholder="Enter your college email"
+                            autocomplete="email" required>
+
+                    </div>
+
+
+                    <!-- COLLEGE NAME -->
+                    <div class="auth_group">
+
+                        <label for="college">College / University</label>
+
+                        <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+
+                    </div>
+
+
+                    <!-- STUDENT ID -->
+                    <div class="auth_group">
+
+                        <label for="studentId">Student ID</label>
+
+                        <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" required>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+                    <div class="auth_group">
+
+                        <label for="registerPassword">Password</label>
+
+                        <input type="password" id="registerPassword" name="password" placeholder="Create a password"
+                            autocomplete="new-password" required>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="auth_group">
+
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <input type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Confirm your password" autocomplete="new-password" required>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+                    <div class="terms_option">
+
+                        <label>
+                            <input type="checkbox" name="terms" required>
+
+                            <span>
+                                I agree to the Terms and Privacy Policy.
+                            </span>
+                        </label>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+                    <button type="submit" class="auth_submit">
+                        Create Account →
+                    </button>
+
+                </form>
+
+
+                <div class="auth_switch">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </div>
+
+                <a href="index.html" class="back_home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+
+                    <h2>📍 Lost<span>Link</span></h2>
+
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="index.html#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="index.html#About">About Us</a>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer_bottom">
+
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+
+            </div>
+
+        </footer>
+
+    </section>
+
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

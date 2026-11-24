@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Reports | LostLink</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my-reports.css">
+    <link rel="stylesheet" href="css/notifications.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">Lost<span>Link.</span></a>
+        </div>
+
+        <nav class="navbarmenu1">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore Items</a>
+            <a href="report.html">Report Item</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="my-reports.html" class="active">My Reports</a>
+        </nav>
+
+        <div class="nav-actions" id="authNav">
+            <a href="login.html">Login</a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="my-reports-container">
+
+        <!-- PAGE HEADER -->
+        <section class="my-reports-header">
+
+            <div>
+                <p class="reports-tag">MY ACTIVITY</p>
+
+                <h1>My <span>Reports</span></h1>
+
+                <p>
+                    Manage and track all your submitted lost and found reports.
+                </p>
+            </div>
+
+            <a href="report.html" class="primary-btn">
+                + Report an Item
+            </a>
+
+        </section>
+
+
+        <!-- REPORT STATISTICS -->
+        <section class="my-reports-stats">
+
+            <div class="my-report-stat">
+                <p>Total Reports</p>
+                <h2 id="totalReports">0</h2>
+            </div>
+
+            <div class="my-report-stat">
+                <p>Lost Items</p>
+                <h2 id="lostReports">0</h2>
+            </div>
+
+            <div class="my-report-stat">
+                <p>Found Items</p>
+                <h2 id="foundReports">0</h2>
+            </div>
+
+            <div class="my-report-stat">
+                <p>Resolved</p>
+                <h2 id="resolvedReports">0</h2>
+            </div>
+
+        </section>
+
+
+        <!-- REPORT LIST -->
+        <section class="my-reports-list-section">
+
+            <div class="my-reports-list-heading">
+
+                <div>
+                    <h2>All Submitted Reports</h2>
+                    <p>Here you can view your reported items.</p>
+                </div>
+
+            </div>
+
+            <!-- JavaScript will display reports here -->
+            <div class="my-reports-grid" id="myReportsGrid">
+
+                <div class="reports-loading">
+                    Loading your reports...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+          <footer class="footer">
+
+            <div class="footer_content">
+
+                <div class="footer_logo">
+
+                    <h2>📍 Lost<span>Link</span></h2>
+
+                    <p>
+                        Helping campus communities reconnect
+                        with their lost belongings.
+                    </p>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="#Home">Home</a>
+                    <a href="explore.html">Explore Items</a>
+                    <a href="report.html">Report Item</a>
+                    <a href="#About">About Us</a>
+
+                </div>
+
+
+                <div class="footer_links">
+
+                    <h3>Support</h3>
+
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer_bottom">
+
+                <p>© 2026 LostLink. All Rights Reserved.</p>
+
+            </div>
+
+        </footer>
+
+
+<!-- VIEW REPORT DETAILS MODAL -->
+<div class="view-modal-overlay" id="viewModal">
+
+    <div class="view-modal">
+
+        <button type="button" class="view-modal-close" id="closeViewModal">
+            &times;
+        </button>
+
+        <div class="view-modal-header">
+            <span>REPORT INFORMATION</span>
+            <h2>Item <span>Details</span></h2>
+            <p>Complete information about your submitted report.</p>
+        </div>
+
+        <div id="viewReportContent">
+            <!-- JavaScript will display report details here -->
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- EDIT REPORT MODAL -->
+<div class="edit-modal-overlay" id="editModal">
+
+    <div class="edit-modal">
+
+        <button type="button" class="edit-modal-close" id="closeEditModal">
+            &times;
+        </button>
+
+        <div class="edit-modal-header">
+            <span>UPDATE YOUR REPORT</span>
+            <h2>Edit <span>Report</span></h2>
+            <p>Correct your item information below.</p>
+        </div>
+
+        <form id="editReportForm">
+
+            <input type="hidden" id="editReportId">
+
+            <div class="edit-form-group">
+                <label>Item Type</label>
+                <select id="editItemType" required>
+                    <option value="lost">Lost Item</option>
+                    <option value="found">Found Item</option>
+                </select>
+            </div>
+
+            <div class="edit-form-group">
+                <label>Item Name</label>
+                <input type="text" id="editItemName" required minlength="3">
+            </div>
+
+            <div class="edit-form-group">
+                <label>Category</label>
+                <select id="editCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Bags">Bags</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Documents">Documents</option>
+                    <option value="Books">Books</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <div class="edit-form-group">
+                <label>Description</label>
+                <textarea id="editDescription" required minlength="10"></textarea>
+            </div>
+
+            <div class="edit-form-group">
+                <label>Location</label>
+                <input type="text" id="editLocation" required>
+            </div>
+
+            <div class="edit-form-group">
+                <label>Lost / Found Date</label>
+                <input type="date" id="editItemDate" required>
+            </div>
+
+            <div class="edit-form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="editPhone" maxlength="10"
+                       pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="edit-form-group">
+                <label>Change Item Image (Optional)</label>
+                <input type="file" id="editItemImage" accept="image/png,image/jpeg">
+                <small>Leave empty to keep your existing image. Maximum size: 2 MB.</small>
+            </div>
+
+            <div class="edit-modal-actions">
+
+                <button type="button" id="cancelEdit">
+                    Cancel
+                </button>
+
+                <button type="submit" id="saveEdit">
+                    Save Changes
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- DELETE CONFIRMATION MODAL -->
+<div class="delete-modal-overlay" id="deleteModal">
+
+    <div class="delete-modal">
+
+        <button type="button" class="delete-modal-close" id="closeDeleteModal">
+            &times;
+        </button>
+
+        <div class="delete-modal-icon">🗑️</div>
+
+        <h2>Delete Report?</h2>
+
+        <p>
+            Are you sure you want to delete this report?
+            This action cannot be undone.
+        </p>
+
+        <div class="delete-modal-actions">
+
+            <button type="button" id="cancelDelete">
+                Cancel
+            </button>
+
+            <button type="button" id="confirmDelete">
+                Yes, Delete
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/notifications.js"></script>
+    <script src="js/auth-navbar.js"></script>
+    <script src="js/auth-guard.js"></script>
+    <script src="js/my-reports.js"></script>
+
+</body>
+
+</html>
